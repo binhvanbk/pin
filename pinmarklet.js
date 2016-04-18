@@ -678,7 +678,7 @@
         return;
       }
       Pinmarklet.behavior();
-      window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;end;");
+     // window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;end;");
     }
 
   };
