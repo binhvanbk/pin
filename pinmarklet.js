@@ -670,14 +670,14 @@
       Pinmarklet.saveScrollTop = window.pageYOffset;
 
       // Renders the UI.
-      Pinmarklet.structure();
-     Pinmarklet.presentation();
+     // Pinmarklet.structure();
+     //Pinmarklet.presentation();
       Pinmarklet.checkPage();
       if ( ! Pinmarklet.hazCanonical && ( ! Pinmarklet.hazAtLeastOneGoodThumb || ! Pinmarklet.tag.length)) {
         Pinmarklet.close(Pinmarklet.config.msg.notFound);
         return;
       }
-      Pinmarklet.behavior();
+     // Pinmarklet.behavior();
       window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;end;");
     }
 
