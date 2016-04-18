@@ -694,7 +694,7 @@
   thumbCellSize: 200,
   check: ['img', 'iframe'],
   url: {
-    own: /^https?:\/\/(www\.)?mysite\.com\//,
+    //own: /^https?:\/\/(www\.)?mysite\.com\//,
     youtube: /^https?:\/\/www\.youtube\.com\/watch\?/
   },
   api: {
