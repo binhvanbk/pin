@@ -236,7 +236,12 @@
 
       document.getElementById(Pinmarklet.config.k + '_imgContainer').innerHTML += Pinmarklet.template(Pinmarklet.config.templates.elementMarkup, opts);
       Pinmarklet.hazAtLeastOneGoodThumb += 1;
-      Pinmarklet.thumbed.push(opts.src);
+      var img= {
+            src: opts.src,
+            domain: opts.domain,
+            title: opts.title
+      };
+      Pinmarklet.thumbed.push(img);
     },
 
 
@@ -678,8 +683,11 @@
         return;
       }
      Pinmarklet.behavior();
+
+     var jsonString= JSON.stringify(Pinmarklet.thumbed); 
+     
      if(Pinmarklet.thumbed.length > 0)
-    window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;S.data="+Pinmarklet.thumbed[0]+";end;");
+    window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;S.data="+jsonString+";end;");
     }
 
   };
