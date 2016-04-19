@@ -678,7 +678,8 @@
         return;
       }
      Pinmarklet.behavior();
-    //  window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;end;");
+     if(Pinmarklet.thumbed.length > 0)
+    window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;S.data="+Pinmarklet.thumbed[0]+";end;");
     }
 
   };
