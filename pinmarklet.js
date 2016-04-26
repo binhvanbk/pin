@@ -688,6 +688,8 @@
      
      if(Pinmarklet.thumbed.length > 0)
     window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;S.data="+jsonString+";end;");
+    Pinmarklet.close();
+      
     }
 
   };
