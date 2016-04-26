@@ -234,7 +234,7 @@
       opts.pinurl = opts.pinurl || null;
       opts.media = opts.media || null;
 
-      document.getElementById(Pinmarklet.config.k + '_imgContainer').innerHTML += Pinmarklet.template(Pinmarklet.config.templates.elementMarkup, opts);
+      //document.getElementById(Pinmarklet.config.k + '_imgContainer').innerHTML += Pinmarklet.template(Pinmarklet.config.templates.elementMarkup, opts);
       Pinmarklet.hazAtLeastOneGoodThumb += 1;
       var img= {
             src: opts.src,
