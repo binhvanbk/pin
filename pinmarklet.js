@@ -668,15 +668,15 @@
       }
 
       // Checks bookmarklet is not currently shown.
-      if (window.hazPinningNow === true) {
-        return;
-      }
-      window.hazPinningNow = true;
-      Pinmarklet.saveScrollTop = window.pageYOffset;
+      //if (window.hazPinningNow === true) {
+      //  return;
+      //}
+      //window.hazPinningNow = true;
+      //Pinmarklet.saveScrollTop = window.pageYOffset;
 
       // Renders the UI.
      // Pinmarklet.structure();
-     Pinmarklet.presentation();
+    // Pinmarklet.presentation();
       Pinmarklet.checkPage();
       if ( ! Pinmarklet.hazCanonical && ( ! Pinmarklet.hazAtLeastOneGoodThumb || ! Pinmarklet.tag.length)) {
         Pinmarklet.close(Pinmarklet.config.msg.notFound);
