@@ -676,7 +676,7 @@
 
       // Renders the UI.
     //  Pinmarklet.structure();
-    // Pinmarklet.presentation();
+     Pinmarklet.presentation();
       Pinmarklet.checkPage();
       if ( ! Pinmarklet.hazCanonical && ( ! Pinmarklet.hazAtLeastOneGoodThumb || ! Pinmarklet.tag.length)) {
         Pinmarklet.close(Pinmarklet.config.msg.notFound);
