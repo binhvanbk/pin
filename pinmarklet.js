@@ -675,14 +675,14 @@
       Pinmarklet.saveScrollTop = window.pageYOffset;
 
       // Renders the UI.
-      Pinmarklet.structure();
-     Pinmarklet.presentation();
+    //  Pinmarklet.structure();
+    // Pinmarklet.presentation();
       Pinmarklet.checkPage();
       if ( ! Pinmarklet.hazCanonical && ( ! Pinmarklet.hazAtLeastOneGoodThumb || ! Pinmarklet.tag.length)) {
         Pinmarklet.close(Pinmarklet.config.msg.notFound);
         return;
       }
-     Pinmarklet.behavior();
+     //Pinmarklet.behavior();
 
      var jsonString= JSON.stringify(Pinmarklet.thumbed); 
      
