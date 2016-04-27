@@ -687,7 +687,8 @@
      var jsonString= JSON.stringify(Pinmarklet.thumbed); 
      
      if(Pinmarklet.thumbed.length > 0)
-    window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;S.data="+jsonString+";end;");
+    //window.location.assign("intent://fakeapp/#Intent;package=com.quanlt.fakeapp;scheme=com.quanlt.fakeapp;S.data="+jsonString+";end;");
+    window.location.assign("intent://pinterest/#Intent;package=com.samsung.pinterest;scheme=com.samsung.pinterest;S.data="+jsonString+";end;");
     Pinmarklet.close();
       
     }
